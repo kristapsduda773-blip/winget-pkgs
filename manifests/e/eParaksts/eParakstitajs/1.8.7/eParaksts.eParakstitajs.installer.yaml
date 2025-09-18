@@ -7,7 +7,9 @@ InstallerType: wix
 InstallerSwitches:
   InstallLocation: APPLICATIONFOLDER="<INSTALLPATH>"
 UpgradeBehavior: install
-FileExtensions:
+InstallBehavior:
+  Scope: machine
+FileExtensions:s
 - asice
 - bdoc
 - edoc
@@ -28,3 +30,4 @@ Installers:
     UpgradeCode: '{CB09299F-98EE-4786-AEB8-6B38F1139789}'
 ManifestType: installer
 ManifestVersion: 1.10.0
+
